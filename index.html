@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-advice-width">
+
+        <title>Encriptador de texto - Alura LTM</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <section class="content-main">
+                <div>
+                    <img src="RECURSOS/Logo.svg" class="logo-alura">
+                </div>
+            </section>
+        </header>
+    <main>
+        <section>
+            <div id="boxTextin" class="box-textin">
+                <textarea id="enterTextarea" name="" placeholder="Ingresa el texto aquí" rows="5"></textarea>
+            </div>  
+        </section>
+            <section class="content-warning">
+                <div id="warningResources">
+                    <img src="RECURSOS/Vector.svg">
+                    <p class="text-warning">Sólo letras minúsculas y sin acentos</p>
+                </div>
+            </section>
+            <section class="content-btn-encrypt">
+                <div class="area-decodifing">
+                    <input id="btnEncrypt" type="button" value="Encriptar" onclick="encryptText()" class="btn-encrypt">
+                    <input id="btnDesencrypt" type="button" value="Desencriptar" onclick="desencryptText()" class="btn-desencrypt" onclick="textDesencrypt()">
+                </div>
+            </section>
+            <section class="content-textarea-result" id="show">
+                <div class="imagen-result">
+                    <img src="RECURSOS/Muñeco.svg" alt="imagen texto no encontrado" id="imgMunheco">
+                </div>
+                <div class="text-info-result" id="warningText">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </section>
+            <section id="textResult">
+                <div class="text-result">
+                    <textarea name="" id="textareaResult" class="result-textarea" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="button" name="copy-button" id="copyButton" onclick="copyText()" value="Copiar">
+                </div>
+            </section>
+    </main>
+        <footer class="copy-right">
+            <p>&copy|Manuel Villegas ALTM</p>
+        </footer>
+        <script type="text/javascript" src="index-script.js"></script>
+    </body>
+</html>
